@@ -44,7 +44,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu_nav ml-auto">
-                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
+                        <li class="nav-item active"><a class="nav-link" href="/">Home</a></li> 
                        
                        
                         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
@@ -57,6 +57,25 @@
                         </li> 
                         <li class="nav-item"><a class="nav-link" href="elements.html">Contact</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item submenu dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link" href="detail.html">Detail</a></li>
+                                <li class="nav-item bg-danger">
+                                    <a class="nav-link" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+        
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </li>
+                            </ul>
+                        </li> 
+                        
                     </ul>
                 </div> 
             </nav>
@@ -101,7 +120,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="accomodation_item text-center">
                         <div class="hotel_img">
-                            <img src="image/logo2.jpg" alt="">
+                            <img src="image/logo3.jpeg" alt="">
                             <a href="#" class="btn theme_btn button_hover">Book Now</a>
                         </div>
                         <a href="#"><h4 class="sec_h4">Single Deluxe Room</h4></a>
@@ -121,7 +140,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="accomodation_item text-center">
                         <div class="hotel_img">
-                            <img src="image/logo2.jpg" alt="">
+                            <img src="image/logo3.jpeg" alt="">
                             <a href="#" class="btn theme_btn button_hover">Book Now</a>
                         </div>
                         <a href="#"><h4 class="sec_h4">Economy Double</h4></a>

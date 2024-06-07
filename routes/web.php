@@ -17,3 +17,7 @@ Route::get('/', function () {
     return view('layout.master');
 });
 
+
+Auth::routes();
+
+

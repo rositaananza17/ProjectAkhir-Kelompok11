@@ -15,6 +15,6 @@ Booking Ticket Konser
 
 ## ERD
 
-![Alt text](/public/erd.png)
+![Alt text](erd.png)
 
 ## Link Video

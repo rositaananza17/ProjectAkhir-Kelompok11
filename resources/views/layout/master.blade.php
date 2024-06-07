@@ -56,7 +56,6 @@
                             </ul>
                         </li> 
                         <li class="nav-item"><a class="nav-link" href="elements.html">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">profile</a></li>
                         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                         <li class="nav-item submenu dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>

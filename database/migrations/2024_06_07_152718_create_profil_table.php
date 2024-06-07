@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('profil', function (Blueprint $table) {
             $table->id();
-            $table->string('nama', 45);
             $table->date('ttl');
             $table->string('gender', 45);
             $table->string('alamat', 45);

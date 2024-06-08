@@ -17,25 +17,14 @@
     <!-- main css -->
     <link rel="stylesheet" href="{{asset('/template/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('/template/css/responsive.css')}}">
-
-    <style>
-        .navbar.fixed-top {
-            background-color: #fff; /* Ganti dengan warna background yang diinginkan */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            z-index: 1030; /* Memastikan navbar berada di atas elemen lain */
-        }
-        .navbar-brand img {
-            max-height: 80px; /* Mengatur tinggi maksimal gambar logo */
-        }
-    </style>
 </head>
 <body>
     <!--================Header Area =================-->
     <header class="header_area">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <a class="navbar-brand logo_h" href="index.html"><img src="image/konser.jpeg" alt="Konser" width="150" height="80"></a>
+                <a class="navbar-brand logo_h" href="index.html"><img src="image/logo1.jpg" alt="Konser" width="80" height="80"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -44,29 +33,18 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu_nav ml-auto">
-                        <li class="nav-item active"><a class="nav-link" href="/">Home</a></li> 
-                       
-                        <li class="nav-item submenu dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link" href="/">Blog</a></li>
-                                <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Details</a></li>
-                            </ul>
-                        </li> 
-                        <li class="nav-item"><a class="nav-link" href="elements.html">Contact</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="index">Home</a></li> 
                         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Transaction</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
                         <li class="nav-item submenu dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a class="nav-link" href="detail.html">Detail</a></li>
-                                <li class="nav-item bg-danger">
-                                    <a class="nav-link" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
+                                
         
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    
                                         @csrf
                                     </form>
                                 </li>
@@ -301,17 +279,17 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="js/mail-script.js"></script>
-        <script src="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js"></script>
-        <script src="vendors/nice-select/js/jquery.nice-select.js"></script>
-        <script src="js/mail-script.js"></script>
-        <script src="js/stellar.js"></script>
-        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-        <script src="js/custom.js"></script>
+        <script src="{{asset('/template/js/jquery-3.2.1.min.js')}}"></script>
+        <script src="{{asset('/template/js/popper.js')}}"></script>
+        <script src="{{asset('/template/js/bootstrap.min.js')}}"></script>
+        <script src="{{asset('/template/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
+        <script src="{{asset('/template/js/jquery.ajaxchimp.min.js')}}"></script>
+        <script src="{{asset('/template/js/mail-script.js')}}"></script>
+        <script src="{{asset('/template/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js')}}"></script>
+        <script src="{{asset('/template/vendors/nice-select/js/jquery.nice-select.js')}}"></script>
+        <script src="{{asset('/template/js/mail-script.js')}}"></script>
+        <script src="{{asset('/template/js/stellar.js')}}"></script>
+        <script src="{{asset('/template/vendors/lightbox/simpleLightbox.min.js')}}"></script>
+        <script src="{{asset('/template/js/custom.js')}}"></script>
     </body>
 </html>

@@ -37,19 +37,14 @@
                         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link" href="gallery.html">Transaction</a></li>
                         <li class="nav-item"><a class="nav-link" href="about">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="elements.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
                         <li class="nav-item submenu dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a class="nav-link" href="detail.html">Detail</a></li>
-                                <li class="nav-item bg-danger">
-                                    <a class="nav-link" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
+                                
         
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    
                                         @csrf
                                     </form>
                                 </li>

@@ -14,16 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('auth.login');
-});
-Route::get('index', function () {
     return view('layout.master');
 });
 Route::get('about', function () {
     return view('layout.about');
 });
+Route::get('contact', function () {
+    return view('layout.contact');
+});
 
 
-Auth::routes();
+
+
 
 

@@ -23,8 +23,9 @@ Route::get('about', function () {
 Route::get('contact', function () {
     return view('layout.contact');
 });
-
-
+Route::get('gallery', function () {
+    return view('layout.gallery');
+});
 
 
 

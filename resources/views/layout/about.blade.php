@@ -32,11 +32,11 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="index">Home</a></li> 
-                            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                            <li class="nav-item"><a class="nav-link" href="gallery.html">Transaction</a></li>
-                            <li class="nav-item active"><a class="nav-link" href="about">About Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="elements.html">Contact</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="index">Home</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="gallery">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="gallery">Transaction</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
                             <li class="nav-item submenu dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
                                 <ul class="dropdown-menu">
@@ -63,7 +63,7 @@
                 <div class="page-cover text-center">
                     <h2 class="page-cover-tittle">Tentang Kami</h2>
                     <ol class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li class="active">About Us</li>
                     </ol>
                 </div>
@@ -262,14 +262,14 @@
                         <div class="single-footer-widget instafeed">
                             <h6 class="footer_title">InstaFeed</h6>
                             <ul class="list_style instafeed d-flex flex-wrap">
-                                <li><img src="image/instagram/Image-01.jpg" alt=""></li>
-                                <li><img src="image/instagram/Image-02.jpg" alt=""></li>
-                                <li><img src="image/instagram/Image-03.jpg" alt=""></li>
-                                <li><img src="image/instagram/Image-04.jpg" alt=""></li>
-                                <li><img src="image/instagram/Image-05.jpg" alt=""></li>
-                                <li><img src="image/instagram/Image-06.jpg" alt=""></li>
-                                <li><img src="image/instagram/Image-07.jpg" alt=""></li>
-                                <li><img src="image/instagram/Image-08.jpg" alt=""></li>
+                                <li><img src="{{asset('/template/image/instagram/Image-01.jpg')}}" alt=""></li>
+                                <li><img src="{{asset('/template/image/instagram/Image-02.jpg')}}" alt=""></li>
+                                <li><img src="{{asset('/template/image/instagram/Image-03.jpg')}}" alt=""></li>
+                                <li><img src="{{asset('/template/image/instagram/Image-04.jpg')}}" alt=""></li>
+                                <li><img src="{{asset('/template/image/instagram/Image-05.jpg')}}" alt=""></li>
+                                <li><img src="{{asset('/template/image/instagram/Image-06.jpg')}}" alt=""></li>
+                                <li><img src="{{asset('/template/image/instagram/Image-07.jpg')}}" alt=""></li>
+                                <li><img src="{{asset('/template/image/instagram/Image-08.jpg')}}" alt=""></li>
                             </ul>
                         </div>
                     </div>						

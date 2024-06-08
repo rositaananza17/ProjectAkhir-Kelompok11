@@ -4,8 +4,8 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="image/favicon.png" type="image/png">
-        <title>Royal Hotel</title>
+        <link rel="icon" href="{{asset('/template/image/favicon.png')}}" type="image/png">
+        <title>Konser Music</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="{{asset('/template/css/bootstrap.css')}}">
         <link rel="stylesheet" href="{{asset('/template/vendors/linericon/style.css')}}">
@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="{{asset('/template/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css')}}">
         <link rel="stylesheet" href="{{asset('/template/vendors/nice-select/css/nice-select.css')}}">
         <link rel="stylesheet" href="{{asset('/template/vendors/owl-carousel/owl.carousel.min.css')}}">
+        <link rel="stylesheet" href="{{asset('/template/vendors/lightbox/simpleLightbox.css')}}">
         <!-- main css -->
         <link rel="stylesheet" href="{{asset('/template/css/style.css')}}">
         <link rel="stylesheet" href="{{asset('/template/css/responsive.css')}}">
@@ -23,7 +24,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand logo_h" href="index.html"><img src="image/Logo2.png" alt=""></a>
+                    <a class="navbar-brand logo_h" href="index.html"><img src="image/logo1.jpg" alt="Konser" width="80" height="80"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -34,16 +35,21 @@
                         <ul class="nav navbar-nav menu_nav ml-auto">
                             <li class="nav-item active"><a class="nav-link" href="/">Home</a></li> 
                             <li class="nav-item"><a class="nav-link" href="gallery">Gallery</a></li>
-                            <li class="nav-item"><a class="nav-link" href="accomodation.html">Transaction</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about">About us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact">contact</a></li>
-                                <li class="nav-item submenu dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="blog.html">Detail</a></li>
-                                        <li class="nav-item bg-danger"><a class="nav-link" href="blog-single.html">Log Out</a></li>
-                                    </ul>
-                                </li> 
+                            <li class="nav-item"><a class="nav-link" href="gallery">Transaction</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
+                            <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="detail.html">Detail</a></li>
+                                    <li class="nav-item bg-danger">
+                                        
+                                            @csrf
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li> 
+                            
                         </ul>
                     </div> 
                 </nav>
@@ -56,71 +62,98 @@
             <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background=""></div>
             <div class="container">
                 <div class="page-cover text-center">
-                    <h2 class="page-cover-tittle">Kontak Kami</h2>
+                    <h3 class="page-cover-tittle">Gallery</h3>
                     <ol class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active">About us</li>
+                        <li><a href="index">Home</a></li>
+                        <li class="active">Gallery</li>
                     </ol>
                 </div>
             </div>
         </section>
         <!--================Breadcrumb Area =================-->
         
-        <!--================Contact Area =================-->
-        <section class="contact_area section_gap">
+        <!--================Breadcrumb Area =================-->
+        <section class="gallery_area section_gap">
             <div class="container">
-                <div id="mapBox" class="mapBox" 
-                    data-lat="40.701083" 
-                    data-lon="-74.1522848" 
-                    data-zoom="13" 
-                    data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia."
-                    data-mlat="40.701083"
-                    data-mlon="-74.1522848">
+                <div class="section_title text-center">
+                    <h2 class="title_color">Konser Music Festival</h2>
+                    <p>Who are in extremely love with eco friendly system.</p>
                 </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="contact_info">
-                            <div class="info_item">
-                                <i class="lnr lnr-home"></i>
-                                <h6>Indonesia, Pekanbaru </h6>
-                                <p>Unilak</p>
-                            </div>
-                            <div class="info_item">
-                                <i class="lnr lnr-phone-handset"></i>
-                                <h6><a href="#">00 (440) 9865 562</a></h6>
-                                <p>Nomor</p>
-                            </div>
-                            <div class="info_item">
-                                <i class="lnr lnr-envelope"></i>
-                                <h6><a href="#">unilak@gmail.com</a></h6>
-                                <p>Alamat Email</p>
+                <div class="row imageGallery1" id="gallery">
+                    <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="{{asset('/template/image/gallery/01.jpg')}}" alt="">
+                            <div class="hover">
+                            	<a class="light" href="{{asset('/template/image/gallery/01.jpg')}}"><i class="fa fa-expand"></i></a>
                             </div>
                         </div>
                     </div>
-                  
+                    <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="{{asset('/template/image/gallery/02.jpg')}}" alt="">
+                            <div class="hover">
+                            	<a class="light" href="{{asset('/template/image/gallery/02.jpg')}}"><i class="fa fa-expand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="{{asset('/template/image/gallery/03.jpg')}}" alt="">
+                            <div class="hover">
+                            	<a class="light" href="{{asset('/template/image/gallery/03.jpg')}}"><i class="fa fa-expand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="{{asset('/template/image/gallery/04.jpg')}}" alt="">
+                            <div class="hover">
+                            	<a class="light" href="{{asset('/template/image/gallery/04.jpg')}}"><i class="fa fa-expand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="{{asset('/template/image/gallery/06.jpg')}}" alt="">
+                            <div class="hover">
+                            	<a class="light" href="{{asset('/template/image/gallery/05.jpg')}}"><i class="fa fa-expand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="{{asset('/template/image/gallery/05.jpg')}}" alt="">
+                            <div class="hover">
+                            	<a class="light" href="{{asset('/template/image/gallery/06.jpg')}}"><i class="fa fa-expand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <!--================Contact Area =================-->
+        <!--================Breadcrumb Area =================-->
         
         <!--================ start footer Area  =================-->	
         <footer class="footer-area section_gap">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3  col-md-6 col-sm-6">
+                    <div class="col-lg-3  col-md-3 col-sm-3">
                         <div class="single-footer-widget">
-                            <h6 class="footer_title">About Agency</h6>
+                            <h6 class="footer_title">About Konser</h6>
                             <p>The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point </p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
                         <div class="single-footer-widget">
                             <h6 class="footer_title">Navigation Links</h6>
                             <div class="row">
                                 <div class="col-4">
                                     <ul class="list_style">
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">Feature</a></li>
-                                        <li><a href="#">Services</a></li>
-                                        <li><a href="#">Portfolio</a></li>
+                                        <li><a href="/">Home</a></li>
+                                        <li><a href="contact">Contact</a></li>
+                                        <li><a href="about">About Us</a></li>
+                                        <li><a href="gallery">Gallery</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-4">
@@ -180,45 +213,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             </div>
         </footer>
 		<!--================ End footer Area  =================-->
-       
-       
-       <!--================Contact Success and Error message Area =================-->
-        <div id="success" class="modal modal-message fade" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <i class="fa fa-close"></i>
-                        </button>
-                        <h2>Thank you</h2>
-                        <p>Your message is successfully sent...</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modals error -->
-
-        <div id="error" class="modal modal-message fade" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <i class="fa fa-close"></i>
-                        </button>
-                        <h2>Sorry !</h2>
-                        <p> Something went wrong </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--================End Contact Success and Error message Area =================-->
         
         
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="{{asset('/template/js/jquery-3.2.1.min.js')}}"></script>
-        <script src="{{asset('/tenplate/js/popper.js')}}"></script>
+        <script src="{{asset('/template/js/popper.js')}}"></script>
         <script src="{{asset('/template/js/bootstrap.min.js')}}"></script>
         <script src="{{asset('/template/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
         <script src="{{asset('/template/js/jquery.ajaxchimp.min.js')}}"></script>
@@ -230,13 +230,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="{{asset('/template/vendors/isotope/isotope-min.js')}}"></script>
         <script src="{{asset('/template/js/stellar.js')}}"></script>
         <script src="{{asset('/template/vendors/lightbox/simpleLightbox.min.js')}}"></script>
-        <!--gmaps Js-->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-        <script src="{{asset('/template/js/gmaps.min.js')}}"></script>
-        <!-- contact js -->
-        <script src="{{asset('/template/js/jquery.form.js')}}"></script>
-        <script src="{{asset('/template/js/jquery.validate.min.js')}}"></script>
-        <script src="{{asset('/template/js/contact.js')}}"></script>
         <script src="{{asset('/template/js/custom.js')}}"></script>
     </body>
 </html>

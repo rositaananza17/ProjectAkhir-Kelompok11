@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="{{asset('/template/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css')}}">
         <link rel="stylesheet" href="{{asset('/template/vendors/nice-select/css/nice-select.css')}}">
         <link rel="stylesheet" href="{{asset('/template/vendors/owl-carousel/owl.carousel.min.css')}}">
+        <link rel="stylesheet" href="{{asset('/template/vendors/lightbox/simpleLightbox.css')}}">
         <!-- main css -->
         <link rel="stylesheet" href="{{asset('/template/css/style.css')}}">
         <link rel="stylesheet" href="{{asset('/template/css/responsive.css')}}">
@@ -33,10 +34,10 @@
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
                             <li class="nav-item"><a class="nav-link" href="index">Home</a></li> 
-                            <li class="nav-item"><a class="nav-link" href="gallery">Gallery</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="gallery">Gallery</a></li>
                             <li class="nav-item"><a class="nav-link" href="transaction">Transaction</a></li>
                             <li class="nav-item"><a class="nav-link" href="about">About us</a></li>
-                            <li class="nav-item active"><a class="nav-link" href="contact">contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact">contact</a></li>
                                 <li class="nav-item submenu dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
                                     <ul class="dropdown-menu">
@@ -56,53 +57,104 @@
             <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background=""></div>
             <div class="container">
                 <div class="page-cover text-center">
-                    <h2 class="page-cover-tittle">Kontak Kami</h2>
+                    <h2 class="page-cover-tittle">Gallery</h2>
                     <ol class="breadcrumb">
                         <li><a href="index.html">Home</a></li>
-                        <li class="active">Contact</li>
+                        <li class="active">Gallery</li>
                     </ol>
                 </div>
             </div>
         </section>
         <!--================Breadcrumb Area =================-->
         
-        <!--================Contact Area =================-->
-        <section class="contact_area section_gap">
+        <!--================Breadcrumb Area =================-->
+        <section class="gallery_area section_gap">
             <div class="container">
-                <div id="mapBox" class="mapBox" 
-                    data-lat="40.701083" 
-                    data-lon="-74.1522848" 
-                    data-zoom="13" 
-                    data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia."
-                    data-mlat="40.701083"
-                    data-mlon="-74.1522848">
+                <div class="section_title text-center">
+                    <h2 class="title_color">Galeri Konser</h2>
+                    <p>Who are in extremely love with eco friendly system.</p>
                 </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="contact_info">
-                            <div class="info_item">
-                                <i class="lnr lnr-home"></i>
-                                <h6>Indonesia, Pekanbaru </h6>
-                                <p>Unilak</p>
-                            </div>
-                            <div class="info_item">
-                                <i class="lnr lnr-phone-handset"></i>
-                                <h6><a href="#">00 (440) 9865 562</a></h6>
-                                <p>Nomor</p>
-                            </div>
-                            <div class="info_item">
-                                <i class="lnr lnr-envelope"></i>
-                                <h6><a href="#">unilak@gmail.com</a></h6>
-                                <p>Alamat Email</p>
+                <div class="row imageGallery1" id="gallery">
+                    <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="/template/image/gallery/01.jpg" alt="">
+                            <div class="hover">
+                            	<a class="light" href="/template/image/gallery/01.jpg"><i class="fa fa-expand"></i></a>
                             </div>
                         </div>
                     </div>
-                  
+                    <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="/template/image/gallery/02.jpg" alt="">
+                            <div class="hover">
+                            	<a class="light" href="/template/image/gallery/02.jpg"><i class="fa fa-expand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="/template/image/gallery/03.jpg" alt="">
+                            <div class="hover">
+                            	<a class="light" href="/template/image/gallery/03.jpg"><i class="fa fa-expand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="/template/image/gallery/04.jpg" alt="">
+                            <div class="hover">
+                            	<a class="light" href="image/gallery/04.jpg"><i class="fa fa-expand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="/template/image/gallery/06.jpg" alt="">
+                            <div class="hover">
+                            	<a class="light" href="/template/image/gallery/05.jpg"><i class="fa fa-expand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="/template/image/gallery/05.jpg" alt="">
+                            <div class="hover">
+                            	<a class="light" href="/template/image/gallery/06.jpg"><i class="fa fa-expand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="/template/image/gallery/01-1.jpg" alt="">
+                            <div class="hover">
+                            	<a class="light" href="/template/image/gallery/01-1.jpg"><i class="fa fa-expand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="/template/image/gallery/02-1.jpg" alt="">
+                            <div class="hover">
+                            	<a class="light" href="/template/image/gallery/02-1.jpg"><i class="fa fa-expand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="/template/image/gallery/03-1.jpg" alt="">
+                            <div class="hover">
+                            	<a class="light" href="/template/image/gallery/03-1.jpg"><i class="fa fa-expand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <!--================Contact Area =================-->
+        <!--================Breadcrumb Area =================-->
         
-       <!--================ Facilities Area  =================-->
-       <section class="facilities_area section_gap">
+      <!--================ Facilities Area  =================-->
+      <section class="facilities_area section_gap">
         <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background="">  
         </div>
 <div class="container">
@@ -151,7 +203,6 @@
 </div>
 </section>
 <!--================ Facilities Area  =================-->
-        
         
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

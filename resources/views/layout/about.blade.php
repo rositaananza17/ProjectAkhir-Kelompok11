@@ -23,7 +23,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand logo_h" href="index.html"><img src="image/Logo1.png" alt=""></a>
+                    <a class="navbar-brand logo_h" href="index.html"><img src="image/logo1.jpg" alt="Konser" width="80" height="80"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -33,18 +33,28 @@
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
                             <li class="nav-item"><a class="nav-link" href="index">Home</a></li> 
-                            <li class="nav-item active"><a class="nav-link" href="about.html">About us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="accomodation.html">Accomodation</a></li>
                             <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="gallery.html">Transaction</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="about">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="elements.html">Contact</a></li>
                             <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Details</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="detail.html">Detail</a></li>
+                                    <li class="nav-item bg-danger">
+                                        <a class="nav-link" href="{{ route('logout') }}"
+                                           onclick="event.preventDefault();
+                                                         document.getElementById('logout-form').submit();">
+                                            {{ __('Logout') }}
+                                        </a>
+            
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                            @csrf
+                                        </form>
+                                    </li>
                                 </ul>
                             </li> 
-                            <li class="nav-item"><a class="nav-link" href="elements.html">Elemests</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            
                         </ul>
                     </div> 
                 </nav>
@@ -57,10 +67,10 @@
             <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background=""></div>
             <div class="container">
                 <div class="page-cover text-center">
-                    <h2 class="page-cover-tittle">About Us</h2>
+                    <h2 class="page-cover-tittle">Tentang Kami</h2>
                     <ol class="breadcrumb">
                         <li><a href="index.html">Home</a></li>
-                        <li class="active">About</li>
+                        <li class="active">About Us</li>
                     </ol>
                 </div>
             </div>
@@ -73,9 +83,9 @@
                 <div class="row">
                     <div class="col-md-6 d_flex align-items-center">
                         <div class="about_content ">
-                            <h2 class="title title_color">About Us <br>Our History<br>Mission & Vision</h2>
-                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
-                            <a href="#" class="button_hover theme_btn_two">Request Custom Price</a>
+                            <h2 class="title title_color">Tentang Kami</h2>
+                            <p>Ini adalah projek akhir untuk tugas bootcamp Sanbercode yang bertemakan booking tiket konser, tim kami terdiri dari:<br> -Muhammad Rama Putra <br>-Helvin Basama Tondang <br>-Raikhan Wira Pramana <br>-Rosita Ananza</p>
+                            <a href="contact" class="button_hover theme_btn_two">Kontak Kami</a>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -92,7 +102,7 @@
             </div>
             <div class="container">
                 <div class="section_title text-center">
-                    <h2 class="title_w">Royal Facilities</h2>
+                    <h2 class="title_w">Fasilitas Konser</h2>
                     <p>Who are in extremely love with eco friendly system.</p>
                 </div>
                 <div class="row mb_30">
@@ -104,25 +114,25 @@
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="facilities_item">
-                            <h4 class="sec_h4"><i class="lnr lnr-bicycle"></i>Sports CLub</h4>
+                            <h4 class="sec_h4"><i class="lnr lnr-bicycle"></i>Kendaraan</h4>
                             <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="facilities_item">
-                            <h4 class="sec_h4"><i class="lnr lnr-shirt"></i>Swimming Pool</h4>
+                            <h4 class="sec_h4"><i class="lnr lnr-shirt"></i>Merch</h4>
                             <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="facilities_item">
-                            <h4 class="sec_h4"><i class="lnr lnr-car"></i>Rent a Car</h4>
+                            <h4 class="sec_h4"><i class="lnr lnr-car"></i>Ambulance</h4>
                             <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="facilities_item">
-                            <h4 class="sec_h4"><i class="lnr lnr-construction"></i>Gymnesium</h4>
+                            <h4 class="sec_h4"><i class="lnr lnr-construction"></i>Security</h4>
                             <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
                         </div>
                     </div>
@@ -141,43 +151,43 @@
         <section class="testimonial_area section_gap">
             <div class="container">
                 <div class="section_title text-center">
-                    <h2 class="title_color">Testimonial from our Clients</h2>
-                    <p>The French Revolution constituted for the conscience of the dominant aristocratic class a fall from </p>
+                    <h2 class="title_color">Testimoni dari Clients</h2>
+                    <p>Kumpulan Testimoni dari client yang pernah menggunakan jasa kami </p>
                 </div>
                 <div class="testimonial_slider owl-carousel">
                     <div class="media testimonial_item">
                         <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="">
                         <div class="media-body">
-                            <p>As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face, and She is the </p>
-                            <a href="#"><h4 class="sec_h4">Fanny Spencer</h4></a>
+                            <p>Sangat Terpercaya dan fasiitas lengkap pengalaman yang memuaskan</p>
+                            <a href="#"><h4 class="sec_h4">Muhammad Rama Putra</h4></a>
                             <div class="star">
                                 <a href="#"><i class="fa fa-star"></i></a>
                                 <a href="#"><i class="fa fa-star"></i></a>
                                 <a href="#"><i class="fa fa-star"></i></a>
                                 <a href="#"><i class="fa fa-star"></i></a>
-                                <a href="#"><i class="fa fa-star-half-o"></i></a>
+                                <a href="#"><i class="fa fa-star-o"></i></a>
                             </div>
                         </div>
                     </div>    
                     <div class="media testimonial_item">
                         <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="">
                         <div class="media-body">
-                            <p>As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face, and She is the </p>
-                            <a href="#"><h4 class="sec_h4">Fanny Spencer</h4></a>
+                            <p>Sangat Terpercaya dan fasiitas lengkap pengalaman yang memuaskan</p>
+                            <a href="#"><h4 class="sec_h4">Helvin Basama Tondang</h4></a>
                             <div class="star">
                                 <a href="#"><i class="fa fa-star"></i></a>
                                 <a href="#"><i class="fa fa-star"></i></a>
                                 <a href="#"><i class="fa fa-star"></i></a>
                                 <a href="#"><i class="fa fa-star"></i></a>
-                                <a href="#"><i class="fa fa-star-half-o"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="media testimonial_item">
                         <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="">
                         <div class="media-body">
-                            <p>As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face, and She is the </p>
-                            <a href="#"><h4 class="sec_h4">Fanny Spencer</h4></a>
+                            <p>Sangat Terpercaya dan fasiitas lengkap pengalaman yang memuaskan</p>
+                            <a href="#"><h4 class="sec_h4">Raikhan Wira Pramana</h4></a>
                             <div class="star">
                                 <a href="#"><i class="fa fa-star"></i></a>
                                 <a href="#"><i class="fa fa-star"></i></a>
@@ -190,8 +200,8 @@
                     <div class="media testimonial_item">
                         <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="">
                         <div class="media-body">
-                            <p>As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face, and She is the </p>
-                            <a href="#"><h4 class="sec_h4">Fanny Spencer</h4></a>
+                            <p>Sangat Terpercaya dan fasiitas lengkap pengalaman yang memuaskan</p>
+                            <a href="#"><h4 class="sec_h4">Rosita Ananza</h4></a>
                             <div class="star">
                                 <a href="#"><i class="fa fa-star"></i></a>
                                 <a href="#"><i class="fa fa-star"></i></a>
@@ -289,16 +299,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js"></script>
-        <script src="vendors/nice-select/js/jquery.nice-select.js"></script>
-        <script src="js/mail-script.js"></script>
-        <script src="js/stellar.js"></script>
-        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-        <script src="js/custom.js"></script>
+        <script src="{{asset('/template/js/jquery-3.2.1.min.js')}}"></script>
+        <script src="{{asset('/template/js/popper.js')}}"></script>
+        <script src="{{asset('/template/js/bootstrap.min.js')}}"></script>
+        <script src="{{asset('/template/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
+        <script src="{{asset('/template/js/jquery.ajaxchimp.min.js')}}"></script>
+        <script src="{{asset('/template/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js')}}"></script>
+        <script src="{{asset('/template/vendors/nice-select/js/jquery.nice-select.js')}}"></script>
+        <script src="{{asset('/template/js/mail-script.js')}}"></script>
+        <script src="{{asset('/template/js/stellar.js')}}"></script>
+        <script src="{{asset('/template/vendors/lightbox/simpleLightbox.min.js')}}"></script>
+        <script src="{{asset('/template/js/custom.js')}}"></script>
     </body>
 </html>

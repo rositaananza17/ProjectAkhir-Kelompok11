@@ -4,19 +4,19 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="image/favicon.png" type="image/png">
-        <title>Royal Hotel</title>
+        <link rel="icon" href="{{asset('/template/image/favicon.png')}}" type="image/png">
+        <title>Konser Music</title>
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="vendors/linericon/style.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css">
-        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="{{asset('/template/css/bootstrap.css')}}">
+        <link rel="stylesheet" href="{{asset('/template/vendors/linericon/style.css')}}">
+        <link rel="stylesheet" href="{{asset('/template/css/font-awesome.min.css')}}">
+        <link rel="stylesheet" href="{{asset('/template/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css')}}">
+        <link rel="stylesheet" href="{{asset('/template/vendors/nice-select/css/nice-select.css')}}">
+        <link rel="stylesheet" href="{{asset('/template/vendors/owl-carousel/owl.carousel.min.css')}}">
+        <link rel="stylesheet" href="{{asset('/template/vendors/lightbox/simpleLightbox.css')}}">
         <!-- main css -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="{{asset('/template/css/style.css')}}">
+        <link rel="stylesheet" href="{{asset('/template/css/responsive.css')}}">
     </head>
     <body>
         <!--================Header Area =================-->
@@ -34,17 +34,12 @@
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
-                            <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="accomodation.html">Accomodation</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
                             <li class="nav-item active"><a class="nav-link" href="gallery.html">Gallery</a></li>
                             <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Details</a></li>
-                                </ul>
+                            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        </ul>
                             </li> 
-                            <li class="nav-item"><a class="nav-link" href="elements.html">Elemests</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
                     </div> 
@@ -72,7 +67,7 @@
         <section class="gallery_area section_gap">
             <div class="container">
                 <div class="section_title text-center">
-                    <h2 class="title_color">Royal Hotel Gallery</h2>
+                    <h2 class="title_color">Konser Music Gallery</h2>
                     <p>Who are in extremely love with eco friendly system.</p>
                 </div>
                 <div class="row imageGallery1" id="gallery">
@@ -160,7 +155,7 @@
                 <div class="row">
                     <div class="col-lg-3  col-md-6 col-sm-6">
                         <div class="single-footer-widget">
-                            <h6 class="footer_title">About Agency</h6>
+                            <h6 class="footer_title">About Konser</h6>
                             <p>The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point </p>
                         </div>
                     </div>
@@ -170,10 +165,10 @@
                             <div class="row">
                                 <div class="col-4">
                                     <ul class="list_style">
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">Feature</a></li>
-                                        <li><a href="#">Services</a></li>
-                                        <li><a href="#">Portfolio</a></li>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="about.html">Tentang Kami</a></li>
+                                        <li><a href="gallery.html">Gallery</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-4">
@@ -237,19 +232,19 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js"></script>
-        <script src="vendors/nice-select/js/jquery.nice-select.js"></script>
-        <script src="js/mail-script.js"></script>
-        <script src="js/stellar.js"></script>
-        <script src="vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
-        <script src="vendors/isotope/isotope-min.js"></script>
-        <script src="js/stellar.js"></script>
-        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-        <script src="js/custom.js"></script>
+        <script src="{{asset('/template/js/jquery-3.2.1.min.js')}}"></script>
+        <script src="{{asset('/template/js/popper.js')}}"></script>
+        <script src="{{asset('/template/js/bootstrap.min.js')}}"></script>
+        <script src="{{asset('/template/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
+        <script src="{{asset('/template/js/jquery.ajaxchimp.min.js')}}"></script>
+        <script src="{{asset('/template/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js')}}"></script>
+        <script src="{{asset('/template/vendors/nice-select/js/jquery.nice-select.js')}}"></script>
+        <script src="{{asset('/template/js/mail-script.js')}}"></script>
+        <script src="{{asset('/template/js/stellar.js')}}"></script>
+        <script src="{{asset('/template/vendors/imagesloaded/imagesloaded.pkgd.min.js')}}"></script>
+        <script src="{{asset('/template/vendors/isotope/isotope-min.js')}}"></script>
+        <script src="{{asset('/template/js/stellar.js')}}"></script>
+        <script src="{{asset('/template/vendors/lightbox/simpleLightbox.min.js')}}"></script>
+        <script src="{{asset('/template/js/custom.js')}}"></script>
     </body>
 </html>

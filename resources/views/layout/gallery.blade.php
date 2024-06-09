@@ -42,7 +42,17 @@
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item"><a class="nav-link" href="blog.html">Detail</a></li>
-                                        <li class="nav-item bg-danger"><a class="nav-link" href="blog-single.html">Log Out</a></li>
+                                        <li class="nav-item bg-danger">
+                                            <a class="nav-link" href="{{ route('logout') }}"
+                                               onclick="event.preventDefault();
+                                                             document.getElementById('logout-form').submit();">
+                                                {{ __('Logout') }}
+                                            </a>
+        
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                @csrf
+                                            </form>
+                                        </li>
                                     </ul>
                                 </li> 
                         </ul>

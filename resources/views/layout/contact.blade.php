@@ -25,7 +25,7 @@
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <a class="navbar-brand logo_h" href="index"><img src="image/logo1.jpg" alt="Konser" width="80" height="80"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="icon-bar"></span>
+                        <span cx`lass="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
@@ -41,7 +41,17 @@
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item"><a class="nav-link" href="blog.html">Detail</a></li>
-                                        <li class="nav-item bg-danger"><a class="nav-link" href="blog-single.html">Log Out</a></li>
+                                        <li class="nav-item bg-danger">
+                                            <a class="nav-link" href="{{ route('logout') }}"
+                                               onclick="event.preventDefault();
+                                                             document.getElementById('logout-form').submit();">
+                                                {{ __('Logout') }}
+                                            </a>
+        
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                @csrf
+                                            </form>
+                                        </li>
                                     </ul>
                                 </li> 
                         </ul>
@@ -69,14 +79,10 @@
         <!--================Contact Area =================-->
         <section class="contact_area section_gap">
             <div class="container">
-                <div id="mapBox" class="mapBox" 
-                    data-lat="40.701083" 
-                    data-lon="-74.1522848" 
-                    data-zoom="13" 
-                    data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia."
-                    data-mlat="40.701083"
-                    data-mlon="-74.1522848">
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.616612347297!2d101.41963196996998!3d0.576135262314809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5ab596fa51bf9%3A0x9512f788d72fc31b!2sLancang%20Kuning%20University!5e0!3m2!1sen!2sid!4v1717913802293!5m2!1sen!2sid" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
+                
                 <div class="row">
                     <div class="col-md-3">
                         <div class="contact_info">
@@ -169,6 +175,7 @@
         <script src="{{asset('/template/js/stellar.js')}}"></script>
         <script src="{{asset('/template/vendors/lightbox/simpleLightbox.min.js')}}"></script>
         <!--gmaps Js-->
+        
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
         <script src="{{asset('/template/js/gmaps.min.js')}}"></script>
         <!-- contact js -->

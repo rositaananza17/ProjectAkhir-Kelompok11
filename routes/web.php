@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KonserController;
 use App\Http\Controllers\TiketController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TransaksiController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -40,6 +42,7 @@ Route::resource('konser', KonserController::class);
 Route::resource('tiket', TiketController::class);
 Route::get('profile', [ProfileController::class, 'index']);
 Route::put('profile/{id}', [ProfileController::class, 'update']);
+Route::resource('transaksi', TransaksiController::class);
 
 Auth::routes();
 

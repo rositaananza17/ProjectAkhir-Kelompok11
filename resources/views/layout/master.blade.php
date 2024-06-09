@@ -40,7 +40,7 @@
                         <li class="nav-item"><a class="nav-link" href="gallery">Gallery</a></li>
                         @auth
                             
-                        <li class="nav-item"><a class="nav-link" href="transaction">Transaction</a></li>
+                        <li class="nav-item"><a class="nav-link" href="transaksi">Transaction</a></li>
                         @endauth
                         <li class="nav-item"><a class="nav-link" href="about">About us</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact">contact</a></li>

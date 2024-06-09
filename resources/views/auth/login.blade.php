@@ -44,12 +44,18 @@
                             </label>
                         </div>
                         <button class="btn btn-lg fw-bold fs-7 btn-success w-100" type="submit">{{ __('Login') }}</button>
+                        <br>
+                        
+                        
                         @if (Route::has('password.request'))
                             <a class="btn btn-link" href="{{ route('password.request') }}">
                                 {{ __('Forgot Your Password?') }}
                             </a>
                         @endif
                     </form>
+                    <a href="index">
+                        <button class="btn btn-lg fw-bold fs-7 btn-success w-100" type="submit">Tanpa Login</button>
+                    </a>
                 </div>
             </div>
         </div>

@@ -34,28 +34,39 @@
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu_nav ml-auto">
                         <li class="nav-item active"><a class="nav-link" href="index">Home</a></li> 
+                        @auth
                         <li class="nav-item "><a class="nav-link" href="konser">Konser</a></li>
+                        @endauth
                         <li class="nav-item"><a class="nav-link" href="gallery">Gallery</a></li>
+                        @auth
+                            
                         <li class="nav-item"><a class="nav-link" href="transaction">Transaction</a></li>
+                        @endauth
                         <li class="nav-item"><a class="nav-link" href="about">About us</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact">contact</a></li>
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="blog.html">Detail</a></li>
-                                    <li class="nav-item bg-danger">
-                                    <a class="nav-link" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
+                        @auth
+                            
+                        <li class="nav-item submenu dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link" href="blog.html">Detail</a></li>
+                                <li class="nav-item bg-danger">
+                                <a class="nav-link" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </li>
-                                </ul>
-                            </li> 
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            </li>
+                            </ul>
+                        </li> 
+                        @endauth
+                        @guest
+                                <li class="nav-item"><a class="nav-link" href="/">Login</a></li>
+                                @endguest
                     </ul>
                         </li> 
                         
@@ -83,6 +94,8 @@
     <!--================Banner Area =================-->
     
     <!--================ Accomodation Area  =================-->
+    @auth
+        
     <section class="accomodation_area section_gap">
         <div class="container">
             <div class="section_title text-center">
@@ -96,8 +109,8 @@
                             <img src="image/logo3.jpeg" alt="">
                             <a href="tiket" class="btn theme_btn button_hover">Book Now</a>
                         </div>
-                        <a href="#"><h4 class="sec_h4">Double Deluxe Room</h4></a>
-                        <h5>$250<small>/night</small></h5>
+                        <a href="tiket"><h4 class="sec_h4">Konser Indie</h4></a>
+                        <h5>$250<small>/show</small></h5>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
@@ -106,8 +119,8 @@
                             <img src="image/logo3.jpeg" alt="">
                             <a href="tiket" class="btn theme_btn button_hover">Book Now</a>
                         </div>
-                        <a href="#"><h4 class="sec_h4">Single Deluxe Room</h4></a>
-                        <h5>$200<small>/night</small></h5>
+                        <a href="tiket"><h4 class="sec_h4">Konser Rock</h4></a>
+                        <h5>$200<small>/show</small></h5>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
@@ -116,8 +129,8 @@
                             <img src="image/logo3.jpeg" alt="">
                             <a href="tiket" class="btn theme_btn button_hover">Book Now</a>
                         </div>
-                        <a href="#"><h4 class="sec_h4">Honeymoon Suit</h4></a>
-                        <h5>$750<small>/night</small></h5>
+                        <a href="tiket"><h4 class="sec_h4">Konser Dangdut</h4></a>
+                        <h5>$750<small>/show</small></h5>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
@@ -126,13 +139,14 @@
                             <img src="image/logo3.jpeg" alt="">
                             <a href="tiket" class="btn theme_btn button_hover">Book Now</a>
                         </div>
-                        <a href="#"><h4 class="sec_h4">Economy Double</h4></a>
-                        <h5>$200<small>/night</small></h5>
+                        <a href="tiket"><h4 class="sec_h4">Konser Pop</h4></a>
+                        <h5>$200<small>/show</small></h5>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    @endauth
     <!--================ Accomodation Area  =================-->
     
     <!--================ Facilities Area  =================-->

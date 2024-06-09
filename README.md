@@ -18,3 +18,5 @@ Booking Ticket Konser
 ![ERD](/public/image/erd.png)
 
 ## Link Video
+
+link yt : https://youtu.be/VWZxLfx3tlw?si=TE0uMnqNoaDu_I3_

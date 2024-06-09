@@ -34,6 +34,7 @@
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu_nav ml-auto">
                         <li class="nav-item active"><a class="nav-link" href="index">Home</a></li> 
+                        <li class="nav-item "><a class="nav-link" href="konser">Konser</a></li>
                         <li class="nav-item"><a class="nav-link" href="gallery">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link" href="transaction">Transaction</a></li>
                         <li class="nav-item"><a class="nav-link" href="about">About us</a></li>

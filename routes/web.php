@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\KonserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +29,12 @@ Route::get('gallery', function () {
 Route::get('contact', function () {
     return view('layout.contact');
 });
+Route::get('detail', function () {
+    return view('layout.detail');
+});
+
+
+Route::resource('konser',KonserController::class);
 
 Auth::routes();
 

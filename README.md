@@ -19,4 +19,4 @@ Booking Ticket Konser
 
 ## Link Video
 
-link yt : https://youtu.be/VWZxLfx3tlw?si=TE0uMnqNoaDu_I3_
+link yt : https://youtu.be/cCD9CnQ1bOU?si=r76gOed3UsJ3wW71

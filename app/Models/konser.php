@@ -11,4 +11,9 @@ class konser extends Model
 
     protected $table = 'konser';
     protected $fillable = ['event','artis','venue','date'];
+
+    public function listTiket()
+    {
+        return $this->hasMany(Tiket::class, 'konser_id');
+    }
 }

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KonserController;
+use App\Http\Controllers\TiketController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,6 +36,7 @@ Route::get('detail', function () {
 
 
 Route::resource('konser',KonserController::class);
+Route::resource('tiket',TiketController::class);
 
 Auth::routes();
 
